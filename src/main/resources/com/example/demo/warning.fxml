@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="219.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.WarningController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="-2.0" prefHeight="56.0" prefWidth="379.0" style="-fx-background-color: #8B008B;" text="ARE YOU SURE ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="yesButton" layoutX="217.0" layoutY="110.0" mnemonicParsing="false" onAction="#setYesButton" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #8B008B;" text="Yes" textFill="WHITE" />
+      <Button fx:id="noButton" layoutX="62.0" layoutY="110.0" mnemonicParsing="false" onAction="#setNoButton" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #8B008B;" text="No" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="695.0" prefWidth="741.0" style="-fx-background-color: light grey;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MenuController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="40.0" prefHeight="90.0" prefWidth="747.0" style="-fx-background-color: #8B008B;">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="31.0" prefHeight="27.0" prefWidth="734.0" text="Choose a sport type" textFill="#00ff80">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.38" radius="48.03" spread="0.67" width="156.74">
+                     <color>
+                        <Color red="1.0" blue="0.4000000059604645" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color green="0.9333333373069763" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="footballButton" alignment="CENTER" layoutX="2.0" layoutY="140.0" mnemonicParsing="false" onAction="#setFootballButton" prefHeight="149.0" prefWidth="743.0" style="-fx-background-color: #5F9EA0;" text="Football" textFill="#0062ff">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.74">
+               <color>
+                  <Color red="0.949999988079071" green="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="basketballButton" alignment="CENTER" layoutX="4.0" layoutY="316.0" mnemonicParsing="false" onAction="#setBasketballButton" prefHeight="150.0" prefWidth="743.0" style="-fx-background-color: #5F9EA0;" text="Basketball" textFill="#aa00b7">
+         <effect>
+            <DropShadow height="58.43" radius="29.3" width="60.77">
+               <color>
+                  <Color red="0.04407407343387604" green="1.0" blue="0.011111111380159855" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="runningButton" alignment="CENTER" layoutX="4.0" layoutY="493.0" mnemonicParsing="false" onAction="#setRunningButton" prefHeight="138.0" prefWidth="743.0" style="-fx-background-color: #5F9EA0;" text="Running" textFill="#fffb00">
+         <effect>
+            <DropShadow height="77.15" radius="34.565" width="63.11">
+               <color>
+                  <Color green="0.7624561190605164" blue="0.8631578683853149" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="sportLabel" alignment="CENTER" layoutX="4.0" layoutY="121.0" prefHeight="19.0" prefWidth="504.0" textFill="#340166">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-1.0" prefHeight="39.0" prefWidth="747.0" style="-fx-background-color: Red;">
+         <children>
+            <Button fx:id="statsButton" layoutX="329.0" layoutY="5.0" mnemonicParsing="false" onAction="#setStatsButton" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: REd;" text="Stats" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="matchesButton" layoutX="51.0" layoutY="5.0" mnemonicParsing="false" onAction="#setMatchesButton" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: REd;" text="Matches" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="nationInfoButton" layoutX="599.0" layoutY="6.0" mnemonicParsing="false" onAction="#setNationInfoButton" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: REd;" text="Match Filter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="deleteButton" layoutX="4.0" layoutY="661.0" mnemonicParsing="false" onAction="#setDeleteButton" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: Red;" text="Delete Account">
+         <effect>
+            <DropShadow spread="0.72" />
+         </effect>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="642.0" layoutY="661.0" mnemonicParsing="false" onAction="#setLogoutButton" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: Red;" text="Log Out" textFill="WHITE">
+         <effect>
+            <DropShadow spread="0.6" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

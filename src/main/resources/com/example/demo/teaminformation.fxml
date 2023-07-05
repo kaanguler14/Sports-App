@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backButton" prefHeight="600.0" prefWidth="1080.0" style="-fx-background-color: #8B008B;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TeamInformationController">
+   <children>
+      <Label layoutX="72.0" layoutY="14.0" prefHeight="18.0" prefWidth="87.0" text="Search Team" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableTableView" layoutX="7.0" layoutY="49.0" prefHeight="502.0" prefWidth="1020.0" style="-fx-background-image: #8B008B;">
+        <columns>
+            <TableColumn fx:id="numberTableColumn" prefWidth="101.6000394821167" text="Number" />
+          <TableColumn fx:id="ageTableColumn" prefWidth="113.5999755859375" text="Age" />
+          <TableColumn fx:id="firstnameTableColumn" prefWidth="242.4000244140625" text="First Name" />
+            <TableColumn fx:id="midnameTableColumn" prefWidth="283.20001220703125" text="Mid Name" />
+            <TableColumn fx:id="lastnameTableColumn" prefWidth="284.79998779296875" text="Last Name" />
+        </columns>
+      </TableView>
+      <TextField fx:id="NationTextField" layoutX="170.0" layoutY="10.0" prefHeight="27.0" prefWidth="366.0" promptText="Please Enter A Nation">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchButton" layoutX="546.0" layoutY="11.0" mnemonicParsing="false" onAction="#setSearchButton" prefHeight="26.0" prefWidth="147.0" text="Search" />
+      <Label fx:id="ageAvarageLabel" layoutX="14.0" layoutY="558.0" prefHeight="36.0" prefWidth="328.0" style="-fx-background-color: #5F9EA0;" text="Team age Avarage: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPlayerLabel" layoutX="386.0" layoutY="558.0" prefHeight="36.0" prefWidth="469.0" style="-fx-background-color: #5F9EA0;" text="Total Player: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

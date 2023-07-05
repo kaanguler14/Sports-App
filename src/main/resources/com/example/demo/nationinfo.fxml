@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="657.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.NationInfoController">
+   <children>
+      <AnchorPane prefHeight="658.0" prefWidth="200.0" style="-fx-background-color: yellow;">
+         <children>
+            <CheckBox fx:id="footballCheckButton" layoutX="1.0" layoutY="182.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" style="-fx-background-color: grey;" text="    Football" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label alignment="CENTER" prefHeight="90.0" prefWidth="198.0" style="-fx-background-color: #8B008B;" text="Filter" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="91.0" prefHeight="90.0" prefWidth="198.0" style="-fx-background-color: #5F9EA0;" text="Match Type" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="basketballCheckButton" layoutX="2.0" layoutY="237.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" style="-fx-background-color: grey;" text="    Basketball" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="runningCheckButton" layoutX="1.0" layoutY="293.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="198.0" style="-fx-background-color: grey;" text="    Running" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="348.0" prefHeight="98.0" prefWidth="198.0" style="-fx-background-color: #5F9EA0;" text="Match Date" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dayTextField" layoutX="3.0" layoutY="475.0" prefHeight="40.0" prefWidth="56.0" promptText="dd">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" blue="0.7666666507720947" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="monthTextField" layoutX="70.0" layoutY="475.0" prefHeight="40.0" prefWidth="56.0" promptText="mm">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" blue="0.7666666507720947" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="yearTextField" layoutX="138.0" layoutY="476.0" prefHeight="40.0" prefWidth="56.0" promptText="yy">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" blue="0.7666666507720947" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Button fx:id="backButton" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#setBackButton" style="-fx-background-color: #8B008B;" text="&lt;--">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="searchButton" layoutX="14.0" layoutY="554.0" mnemonicParsing="false" onAction="#setSearchButton" prefHeight="46.0" prefWidth="171.0" style="-fx-background-color: #5F9EA0;" text="Search" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="totalLabel" layoutX="202.0" layoutY="611.0" prefHeight="46.0" prefWidth="553.0" style="-fx-background-color: #5F9EA0;" text="   Label" textFill="WHITE" />
+      <TableView fx:id="tableTableView" layoutX="198.0" layoutY="2.0" prefHeight="608.0" prefWidth="1470.0">
+         <columns>
+            <TableColumn fx:id="matchtypeColumn" prefWidth="140.0" text="Match Type" />
+            <TableColumn fx:id="dateColumn" prefWidth="140.0" text="Date" />
+            <TableColumn fx:id="timeColumn" prefWidth="140.0" text="Time" />
+            <TableColumn fx:id="teamsColumn" prefWidth="160.0" text="Teams" />
+            <TableColumn fx:id="refereeColumn" prefWidth="168.79998779296875" text="Referee" />
+            <TableColumn fx:id="channelNameColumn" prefWidth="243.2000732421875" text="Channel Name" />
+            <TableColumn fx:id="locationColumn" prefWidth="243.2000732421875" text="Location" />
+            <TableColumn fx:id="phoneColumn" prefWidth="243.2000732421875" text="Phone" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
