@@ -253,7 +253,7 @@ String teamViewQuery=footballQuery +basketballQuery+ runningQuery;
                 union=" union ";
             }
             basketball="basketball";
-            basketballQuery= union+"  (SELECT g.GameID, g.ChannelName, g.Date, g.Time, g.name, r.Fname, GROUP_CONCAT(DISTINCT t.CountryName) AS CountryNames, e.Location, e.Phone FROM game g JOIN team t ON g.TeamID = t.TeamID JOIN referee r ON g.RefereeID = r.RefereeID JOIN event e ON g.EventName = e.EventName  where g.name=\"basketball\"  GROUP BY g.GameID, g.ChannelName, g.Date, g.Time, g.name, r.Fname, e.Location, e.Phone) ";
+            basketballQuery= union+"  ( SELECT g.GameID, g.ChannelName, g.Date, g.Time, g.name, r.Fname, GROUP_CONCAT(DISTINCT t.CountryName) AS CountryNames, e.Location, e.Phone FROM game g JOIN team t ON g.TeamID = t.TeamID JOIN referee r ON g.RefereeID = r.RefereeID JOIN event e ON g.EventName = e.EventName  where g.name=\"basketball\"  GROUP BY g.GameID, g.ChannelName, g.Date, g.Time, g.name, r.Fname, e.Location, e.Phone) ";
             union="";
         }
         else
